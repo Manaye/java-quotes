@@ -1,6 +1,17 @@
-# Lab-08
-java-quotes
+# Lab-09
+ Potent Quotables
 
-This app is made to retrieve data from a json and show random popular book quotes.
- currently we do not have the method
-working so there is no actual way to test it. #creators Hiwot Nega & Kevin Rosales
+This app is made to retrieve data from FabQS API  and
+show random save it to the json file and prints it to the console .
+
+ ### install
+
+ .gradlew build from the terminal to install the dependencies for this project
+
+ ### Running and testing
+
+ the app can be run using ./gradlew run  in the terminal ,it will output a random quote
+ in the console .
+ run this using ./gradlew test in the terminal to run all test
+
+ 
