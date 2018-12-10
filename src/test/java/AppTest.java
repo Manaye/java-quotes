@@ -3,18 +3,31 @@
  */
 import org.junit.Test;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.Queue;
 
 import static org.junit.Assert.*;
 
 public class AppTest {
+    private final ByteArrayOutputStream outcontent = new ByteArrayOutputStream();
     @Test public void testAppHasAGreeting() {
 
     }
     @Test public void tesGetRondomquote(){
         Quote[] quotes = new Quote[]{new Quote("I love you God!","Hiwot")};
          assertTrue(quotes.length>0);
+
+    }
+    @Test
+    public void setUpStream(){
+        System.setOut(new PrintStream(outcontent));
+    }
+    @Test
+    public void testAppMain(){
+        App.main(new String[0]);
+assertFalse("app print a author with \" - \" between them", outcontent.toString().contains(" * "));
 
     }
 
