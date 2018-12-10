@@ -1,5 +1,5 @@
 # Lab-09
- Potent Quotables
+ Potent Quote
 
 This app is made to retrieve data from FabQS API  and
 show random save it to the json file and prints it to the console .
