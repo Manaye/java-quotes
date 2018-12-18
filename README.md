@@ -14,4 +14,3 @@ show random save it to the json file and prints it to the console .
  in the console .
  run this using ./gradlew test in the terminal to run all test
 
- 
