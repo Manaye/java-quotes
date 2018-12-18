@@ -11,15 +11,17 @@ import java.util.Queue;
 import static org.junit.Assert.*;
 
 public class AppTest {
+
     private final ByteArrayOutputStream outcontent = new ByteArrayOutputStream();
     @Test public void testAppHasAGreeting() {
 
     }
     @Test public void tesGetRondomquote(){
-        Quote[] quotes = new Quote[]{new Quote("I love you God!","Hiwot")};
+        Quote[] quotes = new Quote[]{
+                new Quote("I love you God!","Hiwot")};
          assertTrue(quotes.length>0);
-
     }
+
     @Test
     public void setUpStream(){
         System.setOut(new PrintStream(outcontent));
